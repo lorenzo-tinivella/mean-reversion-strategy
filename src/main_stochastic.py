@@ -101,13 +101,17 @@ print(signal_df.tail())
 # 6. Save DataFrames for notebook visualization
 # ----------------------------
 
-# Save trading data with cumulative returns and positions
-data_trading.to_csv("data_trading.csv")
+import os
 
-# Save signal probabilities and confidence
-signal_df.to_csv("signal_df.csv")
+# Create 'data' folder if it does not exist
+if not os.path.exists("data"):
+    os.makedirs("data")
 
-print("Data saved: 'data_trading.csv' and 'signal_df.csv'")
+# Save CSVs inside 'data' folder
+data_trading.to_csv("data/data_trading.csv")
+signal_df.to_csv("data/signal_df.csv")
+
+print("Data saved in 'data/' folder for notebook visualization.")
 
 #Representation
 
