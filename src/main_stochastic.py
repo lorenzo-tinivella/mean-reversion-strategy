@@ -97,6 +97,20 @@ print(signal_df.tail())
 
 # notebook_visualization_english.ipynb
 
+# ----------------------------
+# 6. Save DataFrames for notebook visualization
+# ----------------------------
+
+# Save trading data with cumulative returns and positions
+data_trading.to_csv("data_trading.csv")
+
+# Save signal probabilities and confidence
+signal_df.to_csv("signal_df.csv")
+
+print("Data saved: 'data_trading.csv' and 'signal_df.csv'")
+
+#Representation
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
