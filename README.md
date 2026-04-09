@@ -104,12 +104,12 @@ The goal is to generate probabilistic trading signals using adaptive drift, vola
 ```
 project_root/
 │
-├── main_stochastic_advanced_confidence.py # Main strategy script
+├── main_stochastic.py # Main strategy script
 ├── data/ # Folder containing CSV outputs
 │ ├── data_trading.csv # Trading metrics and cumulative returns
 │ └── signal_df.csv # Probabilistic signals and positions
 ├── notebooks/
-│ └── visualization.ipynb # Notebook for visualization and analysis
+│ └── stochastic_strategy.ipynb # Notebook for visualization and analysis
 ├── README.md # Project documentation
 └── .gitignore # Git ignore file
 ```
